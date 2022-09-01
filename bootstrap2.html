@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>bootstrap-分页</title>
+    <link rel="stylesheet" href="bootstrap2.3.2/css/bootstrap.css"/>
+</head>
+<body>
+
+<div class="container pt-5">
+    <div>
+        <h4>bootstrap2</h4>
+        <div id="pagination" class="pagination"></div>
+    </div>
+</div>
+
+<script src="jquery.js"></script>
+<script src="bootstrap-paginator.js"></script>
+<script>
+  var option = {
+    bootstrapVersion: 2,
+    alignment: 'center',
+    currentPage: 1, // 当前页数
+    numberOfPages: 5, // 显示按钮的数量
+    totalPages: 20, // 总页数
+    itemTexts: function (type, page, current) {
+      switch (type) {
+        case 'first':
+          return '首页'
+        case 'prev':
+          return '上一页'
+        case 'next':
+          return '下一页'
+        case 'last':
+          return '末页'
+        case 'page':
+          return page
+      }
+    },
+    // 点击事件，用于通过Ajax来刷新整个list列表
+    onPageClicked: function (event, originalEvent, type, page) {
+      console.log(page)
+    }
+  }
+  //div的id
+  $('#pagination').bootstrapPaginator(option)
+</script>
+</body>
+</html>
