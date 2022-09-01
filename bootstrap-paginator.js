@@ -677,6 +677,16 @@
       small: 'pagination-sm',
       mini: '',
     },
+    4: {
+      large: 'pagination-lg',
+      small: 'pagination-sm',
+      mini: '',
+    },
+    5: {
+      large: 'pagination-lg',
+      small: 'pagination-sm',
+      mini: '',
+    },
   }
 
   $.fn.bootstrapPaginator.defaults = {
