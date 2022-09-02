@@ -422,7 +422,7 @@
 </table>
 
 # 事件Events：
-## Bootstrap Paginator 提供了俩个事件：page-clicked和page-changed。这俩个事件作为参数使用，分别对应onPageClicked和onPageChanged。
+Bootstrap Paginator 提供了俩个事件：page-clicked和page-changed。这俩个事件作为参数使用，分别对应onPageClicked和onPageChanged。
 
   <table cellspacing="0" cellpadding="0" border="0">
 <tbody>
