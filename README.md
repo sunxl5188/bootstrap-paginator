@@ -1,5 +1,56 @@
 # 一款基于Bootstrap的js分页插件bootstrap-paginator使用实例
 ![image](./preview-nine.jpg)
+
+## 引入css和js文件
+```
+<link rel="stylesheet" href="/bootstrap/css/bootstrap.css"/>
+<script src="jquery.js"></script>
+<script src="bootstrap-paginator.js"></script>
+```
+## 初始化分页--渲染数据后调用分页方法将获取的data传进来方便计算分页
+
+```
+var total = 0 // 总记录
+  var pageSize = 10 // 每页条数
+  $('#pageButton').bootstrapPaginator({
+    bootstrapVersion: 4,
+    alignment: 'center',
+    currentPage: 1, // 当前页数
+    numberOfPages: 5, // 显示按钮的数量
+    totalPages: Math.ceil(total / pageSize), // 总页数
+    itemTexts: function (type, page, current) {
+      switch (type) {
+        case 'first':
+          return '首页'
+        case 'prev':
+          return '上一页'
+        case 'next':
+          return '下一页'
+        case 'last':
+          return '末页'
+        case 'page':
+          return page
+      }
+    },
+    /**
+     * 分页点击事件 点击事件，用于通过Ajax来刷新整个list列表
+     * @param event [jquery对象]
+     * @param originalEvent [dom原生对象]
+     * @param type [按钮类型]
+     * @param page [点击按钮对应的页码]
+     */
+    onPageClicked: function (event, originalEvent, type, page) {
+      console.log(page)
+    }
+  })
+```
+
+## GitHub 官网地址：https://github.com/lyonlai/bootstrap-paginator
+
+## PaginatorAPI文档
+ 
+ 参数介绍：
+
 <table cellspacing="0" cellpadding="0" border="0">
   <thead>
   <tr>
