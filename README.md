@@ -1,5 +1,5 @@
 # 一款基于Bootstrap的js分页插件bootstrap-paginator使用实例
-![image](./preview-nine.png)
+![image](./preview-nine.jpg)
 <table cellspacing="0" cellpadding="0" border="0">
   <thead>
   <tr>
