@@ -10,7 +10,7 @@
 ## 初始化分页--渲染数据后调用分页方法将获取的data传进来方便计算分页
 
 ```
-var total = 0 // 总记录
+  var total = 0 // 总记录
   var pageSize = 10 // 每页条数
   $('#pageButton').bootstrapPaginator({
     bootstrapVersion: 4,
@@ -300,7 +300,7 @@ var total = 0 // 总记录
 
 # 公共命令：
 
-## 另外该插件还提供了几个公共的命令，可以通过如下方法调用，如：$('#example').bootstrapPaginator("show",3) 调用show命令、$('#example').bootstrapPaginator("getPages") 调用getPages命令。
+另外该插件还提供了几个公共的命令，可以通过如下方法调用，如：$('#example').bootstrapPaginator("show",3) 调用show命令、$('#example').bootstrapPaginator("getPages") 调用getPages命令。
 
 <table cellspacing="0" cellpadding="0" border="0">
 <tbody>
